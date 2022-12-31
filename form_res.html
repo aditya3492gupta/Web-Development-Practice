@@ -15,72 +15,103 @@
             <form>
 
                 <h1 style="text-align:center ;">OrderFoodOnline</h1>
-                <label for="Name" class="label">Enter Your Name:</label>
+                <div class="name">
+                    <label for="Name" class="label">Enter Your Name:</label>
 
-                <input type="text" name="lname" id="lname" class="input"><br><br>
-                <label for="dt" class="label">Date:</label>
-                <input type="date" name="dt" id="dt" class="input"><br><br>
-                <label for="Email" class="label">Email
-                    Id.</label>
-                <input type="email" name="email" id="email" class="input"><br><br>
-                <label for="mn" class="label">Mobile No:</label>
-                <input type="number" name="ContactNumber" id="ContactNumber" class="input"><br>
-                <ul>
-                    <label for="option" class="label">Type of Food:</label>
-                    <li><label for="option" class="label">Vegetarian</label>
-                        <input type="radio" name="Vn" id="Vn" class="input">
-                    </li>
-                    <li><label for="option" class="label">Non-Vegetarian</label>
-                        <input type="radio" name="Vn" id="Vn" class="input">
-                    </li>
-                </ul>
-                <label for="res" class="label">Select Restaurant: </label>
-                <select name="res" id="res" class="input">
-                    <option value="">Select Restaurant:</option>
-                    <option value="crossing">Crossing Republik</option>
-                    <option value="Ghanta">Ghanta Ghar</option>
-                    <option value="Lal">Lal Kuan</option>
-                    <option value="Vijya">Vijya Nagar</option>
-                </select>
-                <label for="drink" class="label">Drinks:</label>
-                <select name="drink" id="drink">
-                    <option value="">Select Drink</option>
-                    <option value="Tea">Tea</option>
-                    <option value="coffee">Coffee</option>
-                    <option value="Soft">Soft Drink</option>
-                    <option value="juice">Fruit Juice</option>
-                </select>
-                <label for="soup">Soup:</label>
-                <select name="soup" id="soup">
-                    <option value="">Select Soup</option>
-                    <option value="corn">Sweet Corn Soup</option>
-                    <option value="man">Manchaw Soup</option>
-                    <option value="veg">Vegetable Soup</option>
-                    <option value="hot">Hot and Sour</option>
-                </select>
-                <label for="dish">Dishes:</label>
-                <select name="dish" id="dish">
-                    <option value="">Select Your Dish</option>
-                    <option value="dosa">Dosa</option>
-                    <option value="momos">Momos</option>
-                    <option value="idli">Idli</option>
-                    <option value="chole">Chole Bathure</option>
-                    <option value="pav">Pav Bhaji</option>
-                </select>
-                <label for="of" class="label">Order
-                    For:</label>
-                <label for="Ta" class="label">Take Away</label>
-                <input type="radio" name="radio" id="radio" class="input">
-                <label for="Ta" class="label">Home Delivery</label>
-                <input type="radio" name="radio" id="radio" class="input"><br><br>
-                <label class="ak" for="Address" class="label">Address:</label>
-                <textarea name="address" id="address" cols="50" rows="1">Address</textarea><br><br>
-                <label for="state" class="label">State:</label>
-                <input type="text" name="state" id="state" class="input"><br><br>
-                <input type="submit" value="Submit" class="input">
-                <input type="reset" value="Reset" class="input">
-
+                    <input type="text" name="lname" id="lname" class="input">
+                </div>
+                <div class="date">
+                    <label for="dt" class="label">Date:</label>
+                    <input type="date" name="dt" id="dt" class="input"><br><br>
+                </div>
+                <div class="email">
+                    <label for="Email" class="label">Email
+                        Id.</label>
+                    <input type="email" name="email" id="email" class="input"><br><br>
+                </div>
+                <div class="mobile">
+                    <label for="mn" class="label">Mobile No:</label>
+                    <input type="number" name="ContactNumber" id="ContactNumber" class="input"><br>
+                </div>
+                <div class="category">
+                    <ul class="list">
+                        <label for="option" class="label">Type of Food:</label>
+                        <li><label for="option" class="label">Vegetarian</label>
+                            <input type="radio" name="Vn" id="Vn" class="input">
+                        </li>
+                        <li><label for="option" class="label">Non-Vegetarian</label>
+                            <input type="radio" name="Vn" id="Vn" class="input">
+                        </li>
+                    </ul>
+                </div>
+                <div class="rest">
+                    <label for="res" class="label">Select Restaurant: </label>
+                    <select name="res" id="res" class="input">
+                        <option value="">Select Restaurant:</option>
+                        <option value="crossing">Crossing Republik</option>
+                        <option value="Ghanta">Ghanta Ghar</option>
+                        <option value="Lal">Lal Kuan</option>
+                        <option value="Vijya">Vijya Nagar</option>
+                    </select>
+                </div>
+                <div class="drinks">
+                    <label for="drink" class="label">Drinks:</label>
+                    <select name="drink" id="drink">
+                        <option value="">Select Drink</option>
+                        <option value="Tea">Tea</option>
+                        <option value="coffee">Coffee</option>
+                        <option value="Soft">Soft Drink</option>
+                        <option value="juice">Fruit Juice</option>
+                    </select>
+                </div>
+                <div class="soups">
+                    <label for="soup">Soup:</label>
+                    <select name="soup" id="soup">
+                        <option value="">Select Soup</option>
+                        <option value="corn">Sweet Corn Soup</option>
+                        <option value="man">Manchaw Soup</option>
+                        <option value="veg">Vegetable Soup</option>
+                        <option value="hot">Hot and Sour</option>
+                    </select>
+                </div>
+                <div class="dishes">
+                    <label for="dish">Dishes:</label>
+                    <select name="dish" id="dish">
+                        <option value="">Select Your Dish</option>
+                        <option value="dosa">Dosa</option>
+                        <option value="momos">Momos</option>
+                        <option value="idli">Idli</option>
+                        <option value="chole">Chole Bathure</option>
+                        <option value="pav">Pav Bhaji</option>
+                    </select>
+                </div>
+                <div class="del_type">
+                    <ul class="list">
+                        <label for="of" class="label">Order For:</label>
+                        <li><label for="Ta" class="label">Take Away</label>
+                            <input type="radio" name="radio" id="radio" class="input">
+                        </li>
+                        <li><label for="Ta" class="label">Home Delivery</label>
+                            <input type="radio" name="radio" id="radio" class="input"><br><br>
+                        </li>
+                    </ul>
+                </div>
+                <div class="add">
+                    <label class="ak" for="Address" class="label">Address:</label>
+                    <textarea name="address" id="address" cols="50" rows="5"
+                        placeholder="Enter your address here"></textarea><br><br>
+                </div>
+                <div class="states">
+                    <label for="state" class="label">State:</label>
+                    <input type="text" name="state" id="state" class="input"><br><br>
+                </div>
+                <center>
+                    <div class="btn">
+                        <input type="submit" value="Submit" class="input">
+                        <input type="reset" value="Reset" class="input">
+                    </div>
                 </center>
+
 
             </form>
 

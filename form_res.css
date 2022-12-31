@@ -6,9 +6,33 @@
 
 .container {
     background-color: yellow;
+    /* justify-content: center; */
+    margin: 0 350px;
+    width: 650px;
+    height: auto;
+    /* display: gri; */
 }
 
 .field {
     width: 100%;
     height: auto;
+}
+
+.input {
+    /* justify-content: center; */
+    /* align-items: center; */
+    text-align: center;
+    /* padding-left: 100px; */
+}
+
+
+
+.list {
+    list-style: none;
+    display: flex;
+    /* padding: 10px 10px; */
+}
+
+.list>li {
+    padding: 0px 10px;
 }
