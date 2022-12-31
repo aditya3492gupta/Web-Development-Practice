@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* background-color: yellow; */
+}
+
+.container {
+    background-color: yellow;
+}
+
+.field {
+    width: 100%;
+    height: auto;
+}
