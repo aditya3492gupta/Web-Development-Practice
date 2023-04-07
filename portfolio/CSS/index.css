@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+
+}
+
+.nav-link {
+    color: white;
+}
+
+.home {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading {
+    position: relative;
+    width: 600px;
+    height: 300px;
+}
+
+.thecard {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.4s ease-in-out;
+}
+
+.thecard:hover {
+    transform: rotateY(180deg);
+}
+
+.front {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.back {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+.profile {
+    width: 100%;
+    height: 100vh;
+    color: white;
+    background-image: linear-gradient(black 45%, rgba(7, 1, 7, 0.788));
+}
+
+.cp {
+    background-image: url("/Assets/code.jpg");
+    width: 100%;
+    height: 100vh;
+    color: black;
+}
+
+.project {
+    background-image: url("/Assets/project.jpg");
+    width: 100%;
+    height: 100vh;
+    color: black;
+}
+
+.social {
+    background-image: url("/Assets/social.jpg");
+    width: 100%;
+    height: 100vh;
+    color: black;
+}
