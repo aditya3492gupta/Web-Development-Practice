@@ -14,7 +14,7 @@
 
 .home {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,29 +61,66 @@
 }
 
 .profile {
-    width: 100%;
-    height: 100vh;
+    /* width: 100%; */
+    min-height: 100vh;
+    /* display: flex; */
+    /* display: grid; */
     color: white;
     background-image: linear-gradient(black 45%, rgba(7, 1, 7, 0.788));
 }
 
 .cp {
     background-image: url("/Assets/code.jpg");
+    background-size: cover;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     color: black;
 }
 
 .project {
     background-image: url("/Assets/project.jpg");
+    background-size: cover;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     color: black;
 }
 
 .social {
     background-image: url("/Assets/social.jpg");
+    background-size: cover;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     color: black;
+}
+
+@media (max-width:768px) {
+
+    .home,
+    .cp,
+    .profile,
+    .project,
+    .social {
+        min-height: 80vh;
+        /* background-size: cover; */
+    }
+
+    .tt {
+        font-size: calc(1.525rem+3.3vw);
+    }
+}
+
+@media (max-width:308px) {
+
+    .home,
+    .cp,
+    .profile,
+    .project,
+    .social {
+        min-height: 80vh;
+        /* background-size: cover; */
+    }
+
+    .tt {
+        font-size: calc(1.525rem+3.3vw);
+    }
 }
