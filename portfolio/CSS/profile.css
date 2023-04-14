@@ -1,7 +1,7 @@
 .under {
     position: relative;
-    width: 400px;
-    height: 400px;
+    width: 60vh;
+    height: 60vh;
     background-color: rgba(255, 251, 0, 0.918);
     border: 0px;
     border-radius: 50%;
@@ -17,11 +17,19 @@
     border-radius: 50%;
 }
 
+.job {
+    font-size: 2rem;
+    list-style: none;
+    /* display: flex; */
+}
+
 @media (max-width:1080px) {
     .under {
         width: 300px;
         height: 300px;
     }
+
+
 }
 
 @media (max-width:768px) {
@@ -48,10 +56,4 @@
 
 .list-group {
     display: inline-block;
-}
-
-.job {
-    font-size: 2em;
-    list-style: none;
-    /* display: flex; */
 }

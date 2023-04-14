@@ -77,13 +77,13 @@
     color: black;
 }
 
-.project {
+/* .project {
     background-image: url("/Assets/project.jpg");
     background-size: cover;
     width: 100%;
     min-height: 100vh;
     color: black;
-}
+} */
 
 .social {
     background-image: url("/Assets/social.jpg");
@@ -97,7 +97,6 @@
 
     .home,
     .cp,
-    .profile,
     .project,
     .social {
         min-height: 80vh;
@@ -106,6 +105,24 @@
 
     .tt {
         font-size: calc(1.525rem+3.3vw);
+    }
+}
+
+@media(max-width:560px) {
+    .profile {
+        min-height: 120vh;
+    }
+}
+
+@media(max-width:360px) {
+    .profile {
+        min-height: 180vh;
+    }
+}
+
+@media(max-width:300px) {
+    .profile {
+        min-height: 200vh;
     }
 }
 
