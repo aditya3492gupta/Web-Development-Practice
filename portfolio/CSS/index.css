@@ -61,17 +61,17 @@
 }
 
 .profile {
-    /* width: 100%; */
+    width: 100%;
     min-height: 100vh;
-    /* display: flex; */
-    /* display: grid; */
     color: white;
-    background-image: linear-gradient(black 45%, rgba(7, 1, 7, 0.788));
+    background: linear-gradient(black 45%, rgba(7, 1, 7, 0.788));
+    background-attachment: fixed;
 }
 
 .cp {
     background-image: url("/Assets/code.jpg");
-    background-size: cover;
+    background-attachment: fixed;
+    background-size: 100% 100%;
     width: 100%;
     min-height: 100vh;
     color: black;
@@ -87,7 +87,8 @@
 
 .social {
     background-image: url("/Assets/social.jpg");
-    background-size: cover;
+    background-attachment: fixed;
+    background-size: 100% 100%;
     width: 100%;
     min-height: 100vh;
     color: black;

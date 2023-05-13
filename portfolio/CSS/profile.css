@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .under {
     position: relative;
     width: 60vh;
@@ -9,6 +15,16 @@
     /* display: grid; */
 }
 
+.profile {
+    width: 100%;
+    padding: 10px 10px;
+}
+
+.photo {
+    width: 30%;
+    padding: 10px 10px;
+}
+
 .im {
     position: absolute;
     width: 100%;
@@ -17,8 +33,13 @@
     border-radius: 50%;
 }
 
+.skills .list-group {
+    padding: 10px 10px;
+    display: flex;
+}
+
 .job {
-    font-size: 2rem;
+    font-size: 2em;
     list-style: none;
     /* display: flex; */
 }
@@ -49,11 +70,7 @@
 }
 
 .name {
-    width: 60vw;
+    width: 70%;
     height: 200px;
     /* background-color: antiquewhite; */
-}
-
-.list-group {
-    display: inline-block;
 }
