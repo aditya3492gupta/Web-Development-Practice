@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+    background: #1f242d;
+}
+
+/* Navbar */
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 15px 8%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 500;
+    text-decoration: none;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+}
+
+.navBar a {
+    display: inline-block;
+    font-size: 25px;
+    text-decoration: none;
+    margin-left: 35px;
+    color: #0ef;
+    padding: 12px 28px;
+    background: #1f242d;
+    border-radius: 40px;
+    font-weight: 500;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+    animation-delay: calc(.2s*var(--i));
+    transition: all 0.3s;
+}
+
+.navBar a:hover {
+    color: #0ef;
+    background: rgb(255, 81, 0);
+    transform: scale(1.10);
+}
+
+/* Home Page */
+.home {
+    color: #0ef;
+    width: 100%;
+    min-height: 110vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading {
+    position: relative;
+    width: 600px;
+    height: 300px;
+}
+
+.thecard {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.4s ease-in-out;
+}
+
+.thecard:hover {
+    transform: rotateY(180deg);
+}
+
+.front {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.back {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+.home p {
+    font-size: 50px;
+    font-family: 'Tiro Devanagari Hindi', serif;
+}
+
+/* Profile */
+.profile {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    color: rgb(255, 81, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+
+.profile-content {
+    max-width: 600px;
+}
+
+.image img {
+    max-width: 450px;
+    margin-right: -20px;
+    animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
+    animation-delay: 2s, 3s;
+}
+
+.message h1 {
+    font-size: 5rem;
+}
+
+
+.message p {
+    margin: 40px 0;
+}
+
+.text {
+    font-family: 'Dela Gothic One', cursive;
+    opacity: 0;
+    color: #0ef;
+    animation: slideRight 1s ease forwards;
+}
+
+.resume {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #0ef;
+    border-radius: 40px;
+    box-shadow: 0 0 10px #0ef;
+    font-size: 16px;
+    color: #F9E0D9;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.resume:hover {
+    box-shadow: 0 0 0;
+}
+
+/* Keyframe Animation */
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-24px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Links */
+.cp {
+    background-image: url("/Assets/code.jpg");
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    width: 100%;
+    min-height: 100vh;
+    color: black;
+}
+
+.space {
+    background-color: rgb(204, 123, 30);
+    transition: all 0.3s;
+}
+
+.space:hover {
+    transform: scale(1.15)
+}
+
+.space1 {
+    /* background-color: rgb(204, 123, 30); */
+    transition: all 0.3s;
+}
+
+.space1:hover {
+    transform: scale(1.15)
+}
+
+.space a {
+    color: black;
+    text-decoration: none;
+}
+
+.space1 a {
+    color: black;
+    text-decoration: none;
+}
+
+/* Skills */
+
+.skills {
+    background-image: url("/Assets/social.jpg");
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    width: 100%;
+    min-height: 100vh;
+    color: black;
+}
+
+/* Social */
+.social {
+    background-image: url("/Assets/social.jpg");
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    width: 100%;
+    min-height: 100vh;
+    color: black;
+}
+
+/* Media Query */
+@media (max-width:768px) {
+
+    .home,
+    .cp,
+    .project,
+    .social {
+        min-height: 80vh;
+        /* background-size: cover; */
+    }
+
+    .tt {
+        font-size: calc(1.525rem+3.3vw);
+    }
+}
+
+@media(max-width:560px) {
+    .profile {
+        min-height: 120vh;
+    }
+}
+
+@media(max-width:360px) {
+    .profile {
+        min-height: 180vh;
+    }
+}
+
+@media(max-width:300px) {
+    .profile {
+        min-height: 200vh;
+    }
+}
+
+@media (max-width:308px) {
+
+    .home,
+    .cp,
+    .profile,
+    .project,
+    .social {
+        min-height: 80vh;
+        /* background-size: cover; */
+    }
+
+    .tt {
+        font-size: calc(1.525rem+3.3vw);
+    }
+}
+
+/* Skill Range */
+
+.skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+::selection {
+    color: #fff;
+    background: #6665ee;
+}
+
+.skill-bars {
+    padding: 25px 30px;
+    width: 600px;
+    background: #fff;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.skill-bars .bar {
+    margin: 20px 0;
+}
+
+.skill-bars .bar:first-child {
+    margin-top: 0px;
+}
+
+.skill-bars .bar .info {
+    margin-bottom: 5px;
+}
+
+.skill-bars .bar .info span {
+    font-weight: 500;
+    font-size: 17px;
+    opacity: 0;
+    animation: showText 0.5s 1s linear forwards;
+}
+
+@keyframes showText {
+    100% {
+        opacity: 1;
+    }
+}
+
+.skill-bars .bar .progress-line {
+    height: 10px;
+    width: 100%;
+    background: #f0f0f0;
+    position: relative;
+    transform: scaleX(0);
+    transform-origin: left;
+    border-radius: 10px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05),
+        0 1px rgba(255, 255, 255, 0.8);
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+@keyframes animate {
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+.bar .progress-line span {
+    height: 100%;
+    position: absolute;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    background: #6665ee;
+    animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.bar .progress-line.html span {
+    width: 95%;
+}
+
+.bar .progress-line.css span {
+    width: 80%;
+}
+
+.bar .progress-line.jquery span {
+    width: 55%;
+}
+
+.bar .progress-line.python span {
+    width: 80%;
+}
+
+.bar .progress-line.mysql span {
+    width: 70%;
+}
+
+.progress-line span::before {
+    position: absolute;
+    content: "";
+    top: -10px;
+    right: 0;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+}
+
+.progress-line span::after {
+    position: absolute;
+    top: -28px;
+    right: 0;
+    font-weight: 500;
+    background: #000;
+    color: #fff;
+    padding: 1px 8px;
+    font-size: 12px;
+    border-radius: 3px;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+}
+
+@keyframes showText2 {
+    100% {
+        opacity: 1;
+    }
+}
+
+.progress-line.html span::after {
+    content: "95%";
+}
+
+.progress-line.css span::after {
+    content: "80%";
+}
+
+.progress-line.jquery span::after {
+    content: "55%";
+}
+
+.progress-line.python span::after {
+    content: "80%";
+}
+
+.progress-line.mysql span::after {
+    content: "70%";
+}
